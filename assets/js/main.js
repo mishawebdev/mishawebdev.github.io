@@ -171,3 +171,6 @@
   });
 
 })(jQuery);
+
+
+$("#contactForm").trigger("reset");
