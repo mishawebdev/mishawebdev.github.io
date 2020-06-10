@@ -173,4 +173,4 @@
 })(jQuery);
 
 
-$("#contactForm").trigger("reset");
+$("contactForm").trigger("reset");
