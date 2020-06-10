@@ -171,9 +171,3 @@
   });
 
 })(jQuery);
-
-$('#contactForm').on('submit', function() {
-  $(this).each(function() {
-       this.reset();
-  });
-});
