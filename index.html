@@ -680,6 +680,21 @@
 
       </div>
     </section><!-- End Contact Section -->
+    <!-- RESET FORM AFTER SUBMIT -->
+<script>
+  function submitForm() { 
+    var form = document.getElementById('contact-form')
+
+form.addEventListener('submit', function submitForm (event) {
+  // Prevent the default form submission
+  event.preventDefault()
+  // Do something with the form data
+  console.table([ ...new FormData(form).entries() ])
+  // Reset the form
+  form.reset()
+})
+  }
+</script>
 
   </main><!-- End #main -->
 
@@ -716,21 +731,7 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-<!-- RESET FORM AFTER SUBMIT -->
-<script>
-  function submitForm() { 
-    var form = document.getElementById('contact-form')
 
-form.addEventListener('submit', function submitForm (event) {
-  // Prevent the default form submission
-  event.preventDefault()
-  // Do something with the form data
-  console.table([ ...new FormData(form).entries() ])
-  // Reset the form
-  form.reset()
-})
-  }
-</script>
 </body>
 
 </html>
