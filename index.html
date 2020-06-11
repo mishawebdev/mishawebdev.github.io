@@ -689,7 +689,7 @@ form.addEventListener('submit', function submitForm (event) {
   // Prevent the default form submission
   event.preventDefault()
   // Do something with the form data
-  /*console.table*/ ([ ...new FormData(form).entries() ])
+  console.table([ ...new FormData(form).entries() ])
   // Reset the form
   form.reset()
 })
